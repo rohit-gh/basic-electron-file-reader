@@ -4,12 +4,27 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "tsc && node dist/main.js",
-    "start": "electron main.js",
-    "build": "electron-packager . reader --all --out dist"
+    "dev": "electron main.js",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "CeoIU0aZqtHoeIxdsce",
+    "directories" : {
+      "out" : "dist"
+    },
+    "mac": {
+      "category": "custom"
+    },
+    "win" : {
+      "target" : "msi"
+    },
+    "linux" : {
+      "target" : "AppImage,deb"
+    }
   },
   "devDependencies": {
     "electron": "^8.2.3",
-    "electron-packager": "^14.2.1"
+    "electron-builder": "^22.5.1"
   }
 }
