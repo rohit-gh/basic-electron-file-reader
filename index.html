@@ -1,0 +1,22 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CF Excel Mapper</title>
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/window.css">
+  <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';"/>
+</head>
+<body>
+
+<!--main container-->
+<div class="container">
+  <button id="fileSelector">Select File</button>
+  <p id="selected-file-name"></p>
+  <p style="color: darkred" id="errors"></p>
+  <p style="color: green" id="success-message"></p>
+</div>
+
+<script src="render.js" defer></script>
+</body>
+</html>

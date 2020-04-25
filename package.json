@@ -1,0 +1,15 @@
+{
+  "name": "basic-electron-file-reader",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsc && node dist/main.js",
+    "start": "electron main.js",
+    "build": "electron-packager . --all"
+  },
+  "devDependencies": {
+    "electron": "^8.2.3",
+    "electron-packager": "^14.2.1"
+  }
+}
