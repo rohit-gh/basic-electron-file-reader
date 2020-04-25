@@ -1,26 +1,29 @@
 {
   "name": "basic-electron-file-reader",
   "version": "1.0.0",
+  "description": "A basic event based app for reading files",
+  "author" : "rohit",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "electron main.js",
+    "dev": "electron index.js",
     "pack": "electron-builder --dir",
     "dist": "electron-builder"
   },
   "build": {
     "appId": "CeoIU0aZqtHoeIxdsce",
     "directories" : {
-      "out" : "dist"
+      "output" : "dist"
     },
     "mac": {
-      "category": "custom"
+      "category": "custom",
+      "target" : "dmg"
     },
     "win" : {
       "target" : "msi"
     },
     "linux" : {
-      "target" : "AppImage,deb"
+      "target" : "AppImage"
     }
   },
   "devDependencies": {
