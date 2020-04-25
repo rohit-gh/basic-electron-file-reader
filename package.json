@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tsc && node dist/main.js",
     "start": "electron main.js",
-    "build": "electron-packager . --all"
+    "build": "electron-packager . reader --all --out dist"
   },
   "devDependencies": {
     "electron": "^8.2.3",
